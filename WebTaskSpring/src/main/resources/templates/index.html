@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+<script>
+    var message = "[[#{message}]]";
+    function Click(){
+        alert(message);
+    }
+</script>
+<body>
+<a href="/?lang=en"  th:text="#{en}"></a>
+<a href="/?lang=ru"  th:text="#{ru}"></a>
+
+<h1  th:text="#{greeting}"></h1>
+<button th:text="#{button}" type="submit" onclick="Click()"></button>
+
+</body>
+</html>
